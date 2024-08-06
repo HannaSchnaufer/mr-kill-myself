@@ -1,0 +1,142 @@
+/*sorry for the mess (_ _)*/
+body {
+	margin: 0;
+	padding: 0;
+}
+.material-symbols-outlined { 
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24 /* <!=== heck does this mean?*/
+}
+.icons .material-symbols-outlined {
+    font-size: 24px;
+    border: 0.1px solid #eeeded;
+    background-color: #34c211;
+    padding: 9px;
+    border-radius: 30px;
+}
+.konets {
+	margin: auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+.konets .title {
+	max-width: 1000px;
+ 	align-items: center;
+ 	font-size: 25px;
+ 	font-family: serif;
+ 	margin-bottom: 20px;
+}
+.konets h1 {
+	color: #213756;
+}
+.konets p {
+	color: #213746;
+	width: 100%;
+}
+.konets a {
+}
+.konets span {
+    border: 0.1px solid #f0f0f0;
+    padding: 10px 14px;
+    background-color: rgb(200, 247, 200);
+    border-radius: 30px;
+    text-transform: uppercase;
+    font-size: x-large;
+    color: rgb(61, 141, 75);
+    font-weight: bold;
+}
+.isibox {
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    flex: 1 1 300px;
+    max-width: 300px;
+    margin: 10px;
+}
+.tbl, .tbl2 {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 0 10px;
+    color: #fff;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+}
+.tbl {
+	background-color: #213756;
+}
+.tbl2 {
+    background-color: #213746;
+}
+.contact-form {
+    margin-top: 10px;
+    text-align: left;
+}
+form {
+    background-color: #f4f4f4;
+    padding: 50px;
+    border-radius: 8px;
+    display: flex;
+    flex-wrap: wrap;
+}
+label {
+    display: flex;
+    margin-bottom: 10px;
+    color: #333;
+}
+input, textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    border: 1px solid #213257;
+    border-radius: 4px;
+    padding: 10px;
+}
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.hero {
+    display: flex;
+    justify-content: space-around;  /*i cant i've just wasted 5 hours to solve this prob, 
+    								im just gonna ask chatgpt to do some this part (T-T) :"( 
+    								those grid cant be changed if i used table tho*/
+    flex-wrap: wrap;
+    padding: 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.hero .icons {
+    max-width: 200px;
+    margin: 30px;
+}
+.hero .icons p {
+    font-size: 1.2rem;
+    color: #383636;
+}
+@media (max-width: 1000px) { 
+    .konets {
+        flex-direction: column;
+        align-items: center;
+    }
+    .btn {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: auto;
+    }
+    .btn a {
+        margin-bottom: 10px;
+    }
+}
